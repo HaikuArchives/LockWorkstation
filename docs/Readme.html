@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>HTML Editor Demo</title>
+</head>
+<body style="">
+<h1 align="center"><font class="Apple-style-span" face="'DejaVu Sans'">LockWorkstation
+README</font></h1>
+<div style="text-align: center;"><font class="Apple-style-span"
+ face="'DejaVu Sans'"><img
+ src="file:///system/apps/LockWorkstation/docs/img/Action_Logout.png"><br>
+</font></div>
+<!-- This is just a comment. We start here -->
+<p><font class="Apple-style-span" face="'DejaVu Sans'">LockWorkstation
+provide a login screen to Haiku: With LockWorkstation you can protect
+and restrict accesses to Haiku. You can start it by Desktop icon
+(StartLock) and you can also add it to startup.<br>
+</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><u><b>Please
+read this documentation to properly set and use LockWorkstation.<br>
+</b></u></font></p>
+<h1><font class="Apple-style-span" face="'DejaVu Sans'"><b>Quick</b><b>
+Menu</b><b>:</b><u><b><br>
+</b></u></font></h1>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><u><b><a
+ href="#res">Set your monitor resolution</a></b></u></font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><u><b><a
+ href="#Rescue">I forget username and/or password</a><br>
+</b></u></font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><u><b><a
+ href="#Add_to_startup">Add to startup</a><br>
+</b></u></font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><u><b><a
+ href="#Accesses_report">Reports</a><br>
+</b></u></font></p>
+<h2><a name="Usage"></a><font class="Apple-style-span"
+ face="'DejaVu Sans'">Usage</font></h2>
+<p><font class="Apple-style-span" face="'DejaVu Sans'">First
+of all is strongly recommended to change the default username and
+password (<b>default username and password are baron - haikubox</b>)</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><img
+ src="file:///boot/apps/Lock_Workstation/docs/img/logform.png"><br>
+</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'">To change user
+and password go to Deskbar menu &gt; Preferences &gt; Login:</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><img
+ src="file:///system/apps/LockWorkstation/docs/img/preferences1.png"><br>
+</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'">Then, in Login
+preflet you can change username and password and then clicking on
+"change" button:</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><img
+ src="file:///system/apps/LockWorkstation/docs/img/pref.png"><br>
+</font></p>
+<h2><a name="Monitor_resolution"></a><font class="Apple-style-span"
+ face="'DejaVu Sans'">Monitor resolution<br>
+</font></h2>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><a name="res"></a>Another
+important thing is to set the screen login according to your monitor
+resolution.<br>
+To know your current monitor resolution go to Deskbar menu &gt;
+Preferences &gt; Screen:</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><img
+ src="file:///boot/apps/Lock_Workstation/docs/img/Screen.png"><br>
+(<i>in my case is set to 1280x1024: your resolution could be different</i>)</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'">Then open the
+folder /boot/apps/Lock_Workstation/images and you will see various
+subfolders with resolutions as name. Here select the folder which match
+to your monitor resolution, and edit his name to "default" (without
+quotes). If your monitor resolution is not listed, please mail me and i will provide to you ;-)</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><img
+ src="file:///system/apps/LockWorkstation/docs/img/logscreens.png"><br>
+</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'">You're done.
+Optionally you can also set LockWorkstation to startup with Haiku.</font></p>
+<h2><a name="Add_to_startup"></a><font class="Apple-style-span"
+ face="'DejaVu Sans'">Add to startup<br>
+</font></h2>
+<p><font class="Apple-style-span" face="'DejaVu Sans'">Go
+to&nbsp;/boot/apps/Lock_Workstation and double click on "addtoboot"
+icon. You can also remove LockWorkstation from boot by double click on
+"removefromboot".</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'"><img
+ src="file:///system/apps/LockWorkstation/docs/img/addtoboot.png"><br>
+</font></p>
+<p><font class="Apple-style-span" face="'DejaVu Sans'">
+<h2><a name="Rescue"></a>Rescue</h2>
+<div>If you forget your login details, don't you worry: i have added an
+embedded shortcut to close LockWorkstation without insert login
+details: just press CTRL+ALT+SPACEBAR. Then, to reset your password, go
+to /boot/home/config/settings and delete the file
+LockWorkstationSetting.<br>
+Then you need to <a href="#Usage">reconfigure username and password</a>
+and <a href="#Monitor_resolution">monitor resolution</a><br>
+</div>
+<div><br>
+</div>
+<div>
+<h2><a name="Accesses_report"></a>Accesses report</h2>
+</div>
+<div>Every time that you login, a logfile will be added to
+/boot/home/Login.txt<br>
+</div>
+<div><img src="file:///system/apps/LockWorkstation/docs/img/log.png"><br>
+</div>
+</font></p>
+</body>
+</html>
