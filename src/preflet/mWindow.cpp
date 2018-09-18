@@ -89,7 +89,7 @@ const char* mWindowTitle = 				"This doesnt work";
 const char* mDefaultBGImageName =		"/login_gfx";
 const char* mDefaultUIImageName =		"/UserImage";
 const char* mDefaultNOUIImageName =		"/NoUserImage";
-const char* mDefaultInstallDir = 		"/boot/apps/Lock_Workstation/";
+const char* mDefaultInstallDir = 		"/system/apps/LockWorkstation/";
 const char* mDefaultUsername = 			"baron";
 const char* mDefaultPassword = 			"haikubox";
 const char* mDefaultColorR = 			"0";
@@ -451,7 +451,7 @@ mTextControlClockPlaceX->SetModificationMessage(new BMessage(CHECK_BUTTONS));
 mTextControlClockPlaceY->SetModificationMessage(new BMessage(CHECK_BUTTONS));
 		
 //ImagePath
-BEntry("boot/apps/Lock Workstation").GetRef(&mEntryRef);
+BEntry("system/apps/LockWorkstation").GetRef(&mEntryRef);
 mTextControlmPathToImageFolder = new BTextControl(mFrameTextPathImageFolder, "TextPathToImages", mStringLabelPathToImages[LanguageNumber], mStringCurrentPathImages.String(), new BMessage(TEXT_IMAGEPATH),
 							 B_FOLLOW_LEFT | B_FOLLOW_TOP);
 mButtonDefaultImagePath = new BButton(mFrameButtonDefaultImagePath, "mFrameButtonDefaultImagePath", mStringLabelDefault[LanguageNumber], new BMessage(BUTTON_DEFAULTPATH),

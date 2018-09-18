@@ -86,7 +86,7 @@ status = file.SetTo(path.Path(), B_READ_ONLY);
 //IMAGES
 	if (savemessage.HasString(mNameConfigImagePath) == 0)
 	{
-	savemessage.AddString(mNameConfigImagePath, "/boot/apps/Lock_Workstation/images/default");
+	savemessage.AddString(mNameConfigImagePath, "/system/apps/LockWorkstation/images/default");
 	}
 savemessage.FindString(mNameConfigImagePath, &mStringPathToImageFolder);
 mStringPathToBG << mStringPathToImageFolder << mDefaultPathToSelBG;
